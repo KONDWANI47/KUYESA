@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and explore music playlists on Cupicsart Beats and Samples.">
+    <meta name="keywords" content="music, playlists, streaming, beats, samples">
+    <title>Cupicsart Beats - Playlists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Cupicsart Beats Logo" width="150" height="50" loading="lazy">
+        </div>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links" role="navigation">
+            <a href="index.html">Home</a>
+            <a href="genres.html">Genres</a>
+            <a href="artists.html">Artists</a>
+            <a href="playlists.html" aria-current="page">Playlists</a>
+            <a href="audio.html">Audio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search music..." aria-label="Search music" autocomplete="off">
+            <button type="button" class="search-btn" aria-label="Search music">Search</button>
+        </div>
+    </nav>
+
+    <!-- Search Results -->
+    <section class="search-results" id="search-results" aria-live="polite">
+        <h2>Search Results</h2>
+        <ul id="results-list"></ul>
+    </section>
+    
+    <!-- Messages -->
+    <div class="messages" id="messages" aria-live="assertive"></div>
+
+    <!-- Playlists Section -->
+    <section id="playlists" class="playlists section">
+        <div class="content-art">
+            <h1>Welcome to Cupicsart Beats and Samples</h1>
+            <p>Discover curated playlists featuring the best beats and samples from Cupicsart and other artists.</p>
+        </div>
+        
+        <!-- Featured Playlists -->
+        <div class="playlists-grid">
+            <div class="playlist-card">
+                <h3>Trap Essentials</h3>
+                <img src="trap-playlist.jpg" alt="Trap Essentials Playlist" width="300" height="300">
+                <p>The best trap beats for your next project</p>
+                <a href="#" class="btn">Listen Now</a>
+            </div>
+            <div class="playlist-card">
+                <h3>Hip Hop Classics</h3>
+                <img src="hiphop-playlist.jpg" alt="Hip Hop Classics Playlist" width="300" height="300">
+                <p>Classic hip hop samples and beats</p>
+                <a href="#" class="btn">Listen Now</a>
+            </div>
+            <div class="playlist-card">
+                <h3>Malawian Vibes</h3>
+                <img src="malawi-playlist.jpg" alt="Malawian Vibes Playlist" width="300" height="300">
+                <p>The best of Malawian music</p>
+                <a href="#" class="btn">Listen Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="genres.html#trap">Trap</a></li>
+                <li><a href="genres.html#hiphop">Hip Hop</a></li>
+                <li><a href="genres.html#jazz">Jazz</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a></p>
+            <p>Phone: <a href="tel:+265992260985">+265 992 260 985</a></p>
+            <div class="social-links">
+                <a href="https://youtu.be/dPoW98UNYSg?si=laNOa90lsYRnj676" aria-label="YouTube">YouTube</a>
+                <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+                <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+                <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+                <a href="https://www.tiktok.com/tiktokstudio" aria-label="TikTok">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

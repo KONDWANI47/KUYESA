@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Cupicsart Beats and Samples or sign up to join our community.">
+    <meta name="keywords" content="music, contact, login, register, beats, samples">
+    <title>Cupicsart Beats - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Cupicsart Beats Logo" width="150" height="50" loading="lazy">
+        </div>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links" role="navigation">
+            <a href="index.html">Home</a>
+            <a href="genres.html">Genres</a>
+            <a href="artists.html">Artists</a>
+            <a href="playlists.html">Playlists</a>
+            <a href="audio.html">Audio</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search music..." aria-label="Search music" autocomplete="off">
+            <button type="button" class="search-btn" aria-label="Search music">Search</button>
+        </div>
+    </nav>
+
+    <!-- Search Results -->
+    <section class="search-results" id="search-results" aria-live="polite">
+        <h2>Search Results</h2>
+        <ul id="results-list"></ul>
+    </section>
+    
+    <!-- Messages -->
+    <div class="messages" id="messages" aria-live="assertive"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="/api/contact" method="POST">
+            <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="contact-name" type="text" placeholder="Your Name" required autocomplete="name">
+                <span class="error name"></span>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="contact-email" type="email" placeholder="Your Email" required autocomplete="email">
+                <span class="error email"></span>
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                <span class="error message"></span>
+            </div>
+            <button type="submit" aria-label="Submit contact form">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="genres.html#trap">Trap</a></li>
+                <li><a href="genres.html#hiphop">Hip Hop</a></li>
+                <li><a href="genres.html#jazz">Jazz</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a></p>
+            <p>Phone: <a href="tel:+265992260985">+265 992 260 985</a></p>
+            <div class="social-links">
+                <a href="https://youtu.be/dPoW98UNYSg?si=laNOa90lsYRnj676" aria-label="YouTube">YouTube</a>
+                <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+                <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+                <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+                <a href="https://www.tiktok.com/tiktokstudio" aria-label="TikTok">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
